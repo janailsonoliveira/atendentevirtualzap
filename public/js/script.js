@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     chatButton.addEventListener('click', () => {
         // Simula redirecionamento para WhatsApp
-        window.open('https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Atendente%20Virtual%20para%20meu%20petshop.', '_blank');
+        window.open('https://wa.me/5511984683865?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Atendente%20Virtual%20para%20meu%20petshop.', '_blank');
     });
     
     // Mostra/esconde a bolha de chat em dispositivos móveis
@@ -136,10 +136,12 @@ document.addEventListener('DOMContentLoaded', function() {
     demoButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             if (button.textContent.includes('DEMONSTRAÇÃO') || 
+                button.textContent.includes('demonstração') ||
                 button.textContent.includes('AGENDE') || 
                 button.textContent.includes('SOLICITE')) {
                 e.preventDefault();
-                alert('Obrigado pelo interesse! Em uma implementação real, aqui abriria um formulário para solicitar uma demonstração da Atendente Virtual para seu petshop.');
+                window.open('https://wa.me/5511984683865?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Atendente%20Virtual%20para%20meu%20petshop.', '_blank');
+                //alert('Obrigado pelo interesse! Em uma implementação real, aqui abriria um formulário para solicitar uma demonstração da Atendente Virtual para seu petshop.');
             }
         });
     });
